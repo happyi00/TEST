@@ -17,6 +17,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    NSLog(@"TEST_A");
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
