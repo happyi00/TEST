@@ -676,9 +676,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzK-UI-ggf">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vzK-UI-ggf">
                         <rect key="frame" x="200" y="162" width="81" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="crT-bG-ame"/>
+                        </constraints>
                         <buttonCell key="cell" type="push" title="Click" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vhk-4I-UWx">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -688,6 +690,10 @@
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="vzK-UI-ggf" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="c7k-fc-ev6"/>
+                    <constraint firstItem="vzK-UI-ggf" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="ftY-38-x2w"/>
+                </constraints>
             </view>
         </window>
     </objects>
