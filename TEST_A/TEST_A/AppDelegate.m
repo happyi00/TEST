@@ -31,4 +31,13 @@
     NSLog(@"applicationWillTerminate");
 }
 
+#pragma mark - Action
+
+- (IBAction)clickAction:(id)sender
+{
+    NSAlert *alert = [[NSAlert alloc] init];
+    alert.messageText = @"Hello World!!!";
+    [alert runModal];
+}
+
 @end
